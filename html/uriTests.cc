@@ -37,8 +37,8 @@ int main(int argc, char **argv)
 		vector<string> tests;
 		tests.push_back("http://www.slashdot.org");
 		tests.push_back("http://www.embratel.net.br:80/Embratel02/cda/portal/0,2297,RE_P_371,00.html");
-		tests.push_back("http://www.embratel.net.br:80/joão.html");
-		tests.push_back("http://www.embratel.net.br:80/superjoão! .html");
+		tests.push_back("http://www.embratel.net.br:80/jo\u00E3o.html");
+		tests.push_back("http://www.embratel.net.br:80/superjo\u00E3o! .html");
 		while(1) {
 			signed char c = getopt(argc, argv, "hd:");
 			if(c == -1) break;

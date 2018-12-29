@@ -2,9 +2,11 @@
 # Process this file with autoconf to produce a configure script.
 
 #AC_PREREQ(2.57)
-AC_INIT(htmlcxx.cc)
-AM_INIT_AUTOMAKE(htmlcxx, 0.86)
-AM_CONFIG_HEADER([config.h])
+AC_INIT([htmlcxx.cc], [0.87])
+AC_CONFIG_SRCDIR([Makefile.am])
+AM_INIT_AUTOMAKE
+AC_CONFIG_HEADERS([config.h])
+AC_CONFIG_MACRO_DIR([m4])
 AM_DISABLE_STATIC
 
 # Checks for programs.
@@ -36,5 +38,6 @@ AC_HEADER_TIME
 AC_LANG_CPLUSPLUS
 CXXFLAGS="$CXXFLAGS -DDEFAULT_CSS=\"\\\"$datadir/htmlcxx/css/default.css\\\"\""
 
+AC_CHECK_SPOON
 AC_CONFIG_FILES([Makefile html/Makefile css/Makefile])
 AC_OUTPUT(htmlcxx.pc)
