@@ -2,7 +2,7 @@
 # Process this file with autoconf to produce a configure script.
 
 #AC_PREREQ(2.57)
-AC_INIT([htmlcxx.cc], [0.87])
+AC_INIT([htmlcxx], [0.87])
 AC_CONFIG_SRCDIR([Makefile.am])
 AM_INIT_AUTOMAKE
 AC_CONFIG_HEADERS([config.h])
