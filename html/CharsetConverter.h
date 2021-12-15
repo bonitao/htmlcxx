@@ -17,7 +17,7 @@ namespace htmlcxx
 						: std::runtime_error(arg) {}
 			};
 			
-			CharsetConverter(const std::string &from, const std::string &to) throw (Exception);
+			CharsetConverter(const std::string &from, const std::string &to);
 			~CharsetConverter();
 			
 			std::string convert(const std::string &input);
